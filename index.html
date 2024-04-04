@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pre-paid Meter Token Display</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Pre-paid Meter Token Display">
+        <meta property="og:description" content="Easily insert Meter Tokens">
+        <meta property="og:image" content="https://imahmud1.github.io/Meter220/images/OG.jpg">
+        <meta property="og:url" content="https://imahmud1.github.io/Meter220/">
+    </head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <p>Basic Instructions:</p>
+            <ul>
+                <li>Copy the entire message from your meter token return message.</li>
+                <li>Paste it into the box below.</li>
+                <li>Check token numbers one by one.</li>
+            </ul>
+            <br>
+            <p>নিয়মাবলী</p>
+            <ul>
+                <li>আপনার মিটার টোকেন এর সম্পূর্ণ মেসেজটি কপি করুন</li>
+                <li>নিচের বক্সে সম্পূর্ণ মেসেজটি পেষ্ট করে দিন</li>
+                <li>Next Token এ ক্লিক করে একটি একটি করে টোকেন চেক করুন</li>
+            </ul>
+        </div>
+        <textarea id="tokenInput" placeholder="Paste your Meter token message here"></textarea>
+        <div class="new-token-container">
+            <button id="newToken" class="nav-btn" style="display: none;">New Token <i class="fas fa-plus"></i></button>
+        </div>
+        <button id="startButton" class="start-btn"><i class="fas fa-play"></i> Start Inserting</button>
+        <div id="warning" class="warning" style="display: none;">Please enter a valid token message.</div>
+        <div id="tokenDisplay" class="token-display">
+            <div id="tokenNumberBox" class="token-number-box"></div>
+        </div>
+        <div id="tokenTableContainer" class="token-table-container">
+        </div>
+        <div class="navigation">
+            <button id="prevToken" class="nav-btn"><i class="fas fa-chevron-left"></i> Previous Token</button>
+            <button id="nextToken" class="nav-btn">Next Token <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="scroll-target"></div>
+    <footer>
+        <div class="footer-content">
+            <span>© SK Hasibur Rahman</span>
+            <span class="footer-icons">
+                <a href="https://skhasibur.com" target="_blank" title="My Website"><i class="fa-brands fa-slack"></i></a>
+                <a href="https://www.linkedin.com/in/sk-hasibur-rahman-913622209" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/beingrvrahman1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </span>
+        </div>
+        <div class="footer-contribute">
+            <a href="https://github.com/beingrvrahman1/MeterToken220" target="_blank">Want to contribute to this project? Click here.</a>
+        </div>
+    </footer>
+</body>
+</html>
